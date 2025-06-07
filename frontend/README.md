@@ -1,12 +1,69 @@
-# React + Vite
+# Gestión de Cursos Online
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en React para la gestión de cursos online. Esta herramienta permite crear, leer, actualizar y eliminar (CRUD) cursos de manera eficiente y fácil de usar.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Pantalla de bienvenida con redirección automática al dashboard
+- Gestión completa de cursos (CRUD)
+- Validación de formularios con react-hook-form
+- Notificaciones con react-hot-toast
+- Diseño responsive adaptado para dispositivos móviles, tablets y escritorio
+- Integración con API REST
 
-## Expanding the ESLint configuration
+## Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite 6
+- React Router DOM 7
+- React Hook Form 7
+- React Hot Toast 2
+- Fetch API para integración con backend
+- CSS responsive personalizado
+
+## Estructura del proyecto
+
+```
+frontend/
+├── public/          # Archivos estáticos
+├── src/
+│   ├── assets/      # Imágenes y recursos
+│   ├── components/  # Componentes reutilizables
+│   │   └── ui/      # Componentes UI básicos (Button, Card, etc)
+│   ├── hooks/       # Custom hooks
+│   ├── pages/       # Componentes de página
+│   ├── styles/      # Archivos CSS
+│   ├── App.jsx      # Componente principal
+│   └── main.jsx     # Punto de entrada
+└── package.json     # Dependencias
+```
+
+## Instalación y ejecución
+
+1. Clonar el repositorio
+2. Instalar dependencias:
+   ```
+   npm install
+   ```
+3. Iniciar el servidor de desarrollo:
+   ```
+   npm run dev
+   ```
+4. Abrir http://localhost:5173 en el navegador
+
+## API
+
+La aplicación se conecta con una API REST externa:
+
+- Endpoint: `https://retoolapi.dev/6QbyzP/cursos-online`
+- Operaciones soportadas: GET, POST, PUT, DELETE
+- Formato de datos:
+  ```json
+  {
+    "id": 1,
+    "curso": "React Fundamentals",
+    "tematica": "Development",
+    "instructor": "John Doe",
+    "descripcion": "Curso básico de React"
+  }
+  ```
