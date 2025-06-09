@@ -1,6 +1,6 @@
 # Gestión de Cursos Online
 
-Aplicación web desarrollada en React para la gestión de cursos online. Esta herramienta permite crear, leer, actualizar y eliminar (CRUD) cursos de manera eficiente y fácil de usar.
+Esta es mi aplicacion web (Jenni) realizada en REACT para el ejercicio numero 1, un CRUD para gestion de Cursos Online, con una interfaz linda y facil de utilizar.
 
 ## Características
 
@@ -21,22 +21,6 @@ Aplicación web desarrollada en React para la gestión de cursos online. Esta he
 - Fetch API para integración con backend
 - CSS responsive personalizado
 
-## Estructura del proyecto
-
-```
-frontend/
-├── public/          # Archivos estáticos
-├── src/
-│   ├── assets/      # Imágenes y recursos
-│   ├── components/  # Componentes reutilizables
-│   │   └── ui/      # Componentes UI básicos (Button, Card, etc)
-│   ├── hooks/       # Custom hooks
-│   ├── pages/       # Componentes de página
-│   ├── styles/      # Archivos CSS
-│   ├── App.jsx      # Componente principal
-│   └── main.jsx     # Punto de entrada
-└── package.json     # Dependencias
-```
 
 ## Instalación y ejecución
 
@@ -51,19 +35,4 @@ frontend/
    ```
 4. Abrir http://localhost:5173 en el navegador
 
-## API
 
-La aplicación se conecta con una API REST externa:
-
-- Endpoint: `https://retoolapi.dev/6QbyzP/cursos-online`
-- Operaciones soportadas: GET, POST, PUT, DELETE
-- Formato de datos:
-  ```json
-  {
-    "id": 1,
-    "curso": "React Fundamentals",
-    "tematica": "Development",
-    "instructor": "John Doe",
-    "descripcion": "Curso básico de React"
-  }
-  ```
